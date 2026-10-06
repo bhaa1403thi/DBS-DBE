@@ -1,0 +1,78 @@
+
+===============================
+COMMANDS - COPY INTO TERMINALS
+===============================
+
+TERMINAL 1 - SPRING BOOT
+
+cd backend
+mvn spring-boot:run
+
+
+TERMINAL 2 - REACTJS
+
+cd frontend
+npm install
+npm run dev
+
+
+MYSQL WORKBENCH
+
+CREATE DATABASE IF NOT EXISTS library_db;
+USE library_db;
+
+SELECT * FROM members;
+SELECT * FROM books;
+
+
+POSTMAN HEALTH
+
+GET http://localhost:8080/api/health
+
+
+POSTMAN REGISTER
+
+POST http://localhost:8080/api/auth/register
+
+Body:
+{
+  "username": "member01",
+  "email": "member01@example.com",
+  "password": "StrongPass123"
+}
+
+
+POSTMAN LOGIN
+
+POST http://localhost:8080/api/auth/login
+
+Body:
+{
+  "username": "member01",
+  "password": "StrongPass123"
+}
+
+
+POSTMAN ADD BOOK
+
+POST http://localhost:8080/api/books
+
+Authorization:
+Bearer {{token}}
+
+Body:
+{
+  "title": "ReactJS and Spring Boot Development",
+  "isbn": "9781234567890",
+  "price": 799.00,
+  "publishedDate": "2026-01-15",
+  "description": "A practical guide to secure web application development."
+}
+
+
+POSTMAN SEARCH
+
+GET http://localhost:8080/api/books/search?q=secure%20web%20development&limit=10
+
+Authorization:
+Bearer {{token}}
