@@ -1,0 +1,16 @@
+com\example\studentrecords\exception\GlobalExceptionHandler.class
+com\example\studentrecords\dto\StudentRequest.class
+com\example\studentrecords\entity\User.class
+com\example\studentrecords\dto\RegisterRequest.class
+com\example\studentrecords\security\JwtUtil.class
+com\example\studentrecords\service\StudentService.class
+com\example\studentrecords\entity\Student.class
+com\example\studentrecords\StudentRecordsApplication.class
+com\example\studentrecords\controller\AuthController.class
+com\example\studentrecords\repository\StudentRepository.class
+com\example\studentrecords\repository\UserRepository.class
+com\example\studentrecords\security\CustomUserDetailsService.class
+com\example\studentrecords\controller\StudentController.class
+com\example\studentrecords\dto\LoginRequest.class
+com\example\studentrecords\security\SecurityConfig.class
+com\example\studentrecords\security\JwtAuthFilter.class
